@@ -1,0 +1,105 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Users" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bb1a8091-5d8e-4b8d-b6a2-2180ae866f52">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MYSQL"/>
+	<query language="SQL"><![CDATA[SELECT
+sc.scid,
+u.name AS farmer_name,
+c.cname AS crop_name,
+sc.planting_date,
+sc.expected_yield,
+sc.status
+FROM seasonal_crop sc
+JOIN farmer f ON sc.fid = f.fid
+JOIN user u ON f.uid = u.uid
+JOIN crop c ON sc.cid = c.cid
+ORDER BY sc.planting_date DESC]]></query>
+	<field name="scid" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="scid"/>
+		<property name="com.jaspersoft.studio.field.label" value="scid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="seasonal_crop"/>
+	</field>
+	<field name="farmer_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="farmer_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="user"/>
+	</field>
+	<field name="crop_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="cname"/>
+		<property name="com.jaspersoft.studio.field.label" value="crop_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="crop"/>
+	</field>
+	<field name="planting_date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="planting_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="planting_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="seasonal_crop"/>
+	</field>
+	<field name="expected_yield" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="expected_yield"/>
+		<property name="com.jaspersoft.studio.field.label" value="expected_yield"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="seasonal_crop"/>
+	</field>
+	<field name="status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="status"/>
+		<property name="com.jaspersoft.studio.field.label" value="status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="seasonal_crop"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="81" splitType="Stretch">
+		<element kind="staticText" uuid="cf261264-c078-4454-a81e-58bf1c2f5e4b" x="110" y="0" width="360" height="40" fontSize="25.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[Seasonal Crop Report]]></text>
+		</element>
+		<element kind="staticText" uuid="abd61a17-7d0c-4515-9735-792d1699f4b9" x="210" y="50" width="150" height="31" fontSize="19.0" bold="true" italic="true">
+			<text><![CDATA[Summary 2025]]></text>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="30" splitType="Stretch">
+		<element kind="staticText" uuid="88da3623-6bf5-4bf3-a95d-2b11c4a24457" x="10" y="0" width="40" height="29" fontSize="13.0" bold="true">
+			<text><![CDATA[Count]]></text>
+		</element>
+		<element kind="staticText" uuid="fb66d86c-f5e1-4874-a7ea-7cc34475bd2c" x="70" y="0" width="90" height="29" fontSize="13.0" bold="true">
+			<text><![CDATA[Farmer_name]]></text>
+		</element>
+		<element kind="staticText" uuid="8cdd231e-ab91-49e2-b0ab-ee830b9a50e4" x="170" y="0" width="90" height="29" fontSize="13.0" bold="true">
+			<text><![CDATA[Crop_name]]></text>
+		</element>
+		<element kind="staticText" uuid="63097de6-b457-420c-979b-68fdc2052af3" x="270" y="0" width="110" height="29" fontSize="13.0" bold="true">
+			<text><![CDATA[planting_date]]></text>
+		</element>
+		<element kind="staticText" uuid="bcc7531c-35a6-4979-b216-33bd7bf09095" x="380" y="0" width="100" height="29" fontSize="13.0" bold="true">
+			<text><![CDATA[expected_yield]]></text>
+		</element>
+		<element kind="staticText" uuid="0076ddf5-98a1-426d-a3b2-485962b11644" x="490" y="0" width="55" height="29" fontSize="13.0" bold="true">
+			<text><![CDATA[status]]></text>
+		</element>
+		<element kind="line" uuid="679aad06-75c2-43be-8a41-707d0215994d" x="0" y="29" width="560" height="1">
+			<pen lineWidth="2.0"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<element kind="textField" uuid="adf6ad15-c5ac-495b-9c25-a863c312f1ea" x="-10" y="10" width="60" height="25" fontSize="12.0" bold="true" hTextAlign="Center">
+				<expression><![CDATA[$F{scid}]]></expression>
+			</element>
+			<element kind="textField" uuid="100e139c-341b-4e21-9502-0e070fe2f9ab" x="70" y="10" width="87" height="25" fontSize="12.0" bold="true" hTextAlign="Center">
+				<expression><![CDATA[$F{farmer_name}]]></expression>
+			</element>
+			<element kind="textField" uuid="ee521b02-9994-4e27-9ab5-07500ff614a6" x="172" y="10" width="87" height="25" fontSize="12.0" bold="true" hTextAlign="Center">
+				<expression><![CDATA[$F{crop_name}]]></expression>
+			</element>
+			<element kind="textField" uuid="1a10686a-d5d8-455c-ade1-f76fbe7d687b" x="280" y="10" width="70" height="25" fontSize="12.0" bold="true" hTextAlign="Center">
+				<expression><![CDATA[$F{planting_date}]]></expression>
+			</element>
+			<element kind="textField" uuid="ee17b978-d9f6-409b-8dae-b891094ee378" x="380" y="10" width="87" height="25" fontSize="12.0" bold="true" hTextAlign="Center">
+				<expression><![CDATA[$F{expected_yield}]]></expression>
+			</element>
+			<element kind="textField" uuid="73aa9fd6-f109-4c63-854e-f154a6e1754e" x="490" y="7" width="70" height="25" fontSize="12.0" bold="true" hTextAlign="Center">
+				<expression><![CDATA[$F{status}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

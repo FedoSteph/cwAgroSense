@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/util/DBConnection.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/util/TestDB.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/model/User.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/model/Farmer.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/model/Crop.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/model/SeasonalCrop.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/model/Inspection.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/model/Buyer.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/ui/DashboardFrame.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/dao/UserDAO.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/ui/SeasonalCropFrame.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/ui/LoginFrameNew.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/ui/InspectionFrame.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/dao/CropDAO.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/dao/SeasonalCropDAO.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/dao/InspectionDAO.java</file>
+            <file>file:/C:/Users/Ameesha/OneDrive/Documents/NetBeansProjects/cwAgroSense/src/dao/FarmerDAO.java</file>
+        </group>
+    </open-files>
+</project-private>

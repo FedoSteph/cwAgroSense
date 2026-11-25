@@ -193,6 +193,4 @@ This is a coursework project. The items below are the main things to address bef
 👤 Author
 Steph Fernando
 
-📄 License
 
-No license has been specified for this project. Add a LICENSE file, such as MIT, before sharing or reusing it publicly.
